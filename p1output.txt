@@ -1,1 +1,13 @@
+ gcc -g p1original.c
+ ./a.out
+enter the numerator for 1
+1
+enter the denominator for 1
+2
+enter the numerator for 2
+1
+enter the denominator for 2
+2
+the sum is = 1/1 of  1/2 + 1/2
+
 
