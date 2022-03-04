@@ -20,17 +20,17 @@ void add(int num1,int den1,int num2,int den2,int *totalnum,int *totalden){
     if(*totalnum%i==0 && *totalden%i==0)
        gcd=i;
   }
- printf("the frACTIOn %d/%d",*totalnum/gcd,*totalden/gcd);
+ printf("the sum is = %d/%d of ",*totalnum/gcd,*totalden/gcd);
 }
 
-void output(int num1,int den1,int num2,int den2,int totalnum,int totalden){
-  printf("the sum of %d/%d + %d/%d = %d/%d",num1,den1,num2,den2,totalnum,totalden);
+void output(int num1,int den1,int num2,int den2){
+  printf(" %d/%d + %d/%d ",num1,den1,num2,den2);
 }
 
 int main(){
   int num1,den1,num2,den2,totalnum,totalden;
   input(&num1,&den1,&num2,&den2);
   add(num1,den1,num2,den2,&totalnum,&totalden);
-  output(num1,den1,num2,den2,totalnum,totalden);
+  output(num1,den1,num2,den2);
   return 0;
 }
